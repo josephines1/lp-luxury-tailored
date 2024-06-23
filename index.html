@@ -3,164 +3,367 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Landing Page</title>
+    <title>Subscribe Now | Luxury Tailored</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./dist/css/styles.css" />
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Font Awesome -->
+    <!-- Font Awesome CDN -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
 
     <!-- Website Icon -->
-    <link rel="website icon" type="png" href="resource/clothes-icon.png" />
+    <link rel="website icon" type="png" href="./assets/icon/logo_primary.png" />
   </head>
   <body>
-    <header id="header">
-      <a href="#main" id="header-logo">
-        <img
-          src="resource/clothes-icon.png"
-          alt="your brand icon"
-          id="header-img"
-        />
-        <span>your brand</span>
-      </a>
-      <nav id="nav-bar">
-        <ul>
-          <li><a href="#products" class="nav-link">Products</a></li>
-          <li><a href="#features" class="nav-link">Features</a></li>
-          <li>
-            <a href="#subscribe" class="nav-link action-link">Subscribe</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <section id="main">
-      <h1 class="main-title">
-        Quality clothes, Latest style, Affordable price
-      </h1>
-      <p class="main-subtitle">Discover clothes that brighten up your life</p>
-      <a class="main-link" href="#products">Get Started</a>
-    </section>
-    <section id="products">
-      <h2 class="products-title">Our Products</h2>
-      <p class="products-subtitle">Check out our best clothes!</p>
-      <div class="products-main">
-        <iframe
-          src="https://www.youtube.com/embed/chWDbXKRFQY?si=t8oQJGTFfnKtENSN"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-          id="video"
-        ></iframe>
-        <h3>Our Best Collection</h3>
-        <div class="products-wrapper">
-          <a href="#" class="product one">
+    <!-- Navbar -->
+    <nav class="navbar py-3">
+      <div class="container justify-content-center">
+        <a class="navbar-brand d-flex align-items-center gap-2" href=".">
+          <img
+            src="./assets/icon/logo_primary.png"
+            alt="Logo"
+            width="30"
+            height="30"
+            class="d-inline-block align-text-top"
+          />
+          <span class="fw-bold logo">Luxury Tailored</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home">
+      <div class="container py-5 px-4">
+        <div class="row align-items-center flex-column-reverse flex-md-row">
+          <div
+            class="col col-md-6 col-12 text-center text-md-start fade-in-left"
+          >
+            <h1 class="fw-bold section-heading mb-2">
+              Quality clothes, Latest style, Affordable price
+            </h1>
+            <p class="">Discover clothes that brighten up your life</p>
+            <a href="#subscribe" class="btn btn-primary py-3 px-4 me-md-2 my-3">
+              Subscribe Now
+            </a>
+          </div>
+          <div class="col col-md-6 col-12 fade-in-right">
             <img
-              src="https://images.pexels.com/photos/12446372/pexels-photo-12446372.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt="product-1"
-              class="product-image"
+              src="./assets/img/hero-img-2.jpg"
+              alt="Home Image"
+              class="img-fluid home-image mb-3 mb-md-0"
             />
-            <div class="product-desc">
-              <h4 class="product-name">Play Hard T-Shirt</h4>
-              <p class="product-price">Rp 99K</p>
-            </div>
-          </a>
-          <a href="#" class="product two">
-            <img
-              src="https://images.pexels.com/photos/2560894/pexels-photo-2560894.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt="product-2"
-              class="product-image"
-            />
-            <div class="product-desc">
-              <h4 class="product-name">Pac-Man T-Shirt</h4>
-              <p class="product-price">Rp 89K</p>
-            </div>
-          </a>
-          <a href="#" class="product three">
-            <img
-              src="https://images.pexels.com/photos/12446409/pexels-photo-12446409.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt="product-3"
-              class="product-image"
-            />
-            <div class="product-desc">
-              <h4 class="product-name">Pexels T-Shirt</h4>
-              <p class="product-price">Rp 139K</p>
-            </div>
-          </a>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- About Us -->
+    <section id="about">
+      <div class="container px-4 py-5 my-5">
+        <div class="row">
+          <div class="col col-md-8 col-12 mx-auto text-center">
+            <h1 class="mb-3 fw-bold section-heading fade-in-up">
+              Crafting <span class="heading-span">Excellence</span>
+              Since 2001
+            </h1>
+            <p class="lh-lg fade-in-up">
+              At Luxury Tailored, we take pride in our heritage of creating
+              garments that define sophistication and style. With decades of
+              expertise, each piece embodies our commitment to quality and
+              innovation. From classic cuts to contemporary styles, our
+              collections cater to discerning individuals who appreciate
+              timeless fashion.
+            </p>
+            <h2 class="mt-5 mb-3 fw-bold section-heading fade-in-up">
+              Watch Our <span class="heading-span">Journey</span>
+            </h2>
+            <iframe
+              src="https://www.youtube.com/embed/chWDbXKRFQY?si=t8oQJGTFfnKtENSN"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              id="video"
+              width="100%"
+              class="about-video fade-in-up"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collections -->
+    <section id="collections">
+      <div class="container my-5 py-5 px-4">
+        <h1 class="fw-bold text-center section-heading fade-in-up">
+          Explore Our Signature
+          <span class="heading-span">Collections</span>
+        </h1>
+        <p class="text-center lh-lg fade-in-up">
+          Discover garments that epitomize luxury, designed to complement your
+          lifestyle with grace and confidence.
+        </p>
+
+        <div class="mt-3 row row-cols-md-2 row-cols-1 g-3">
+          <div class="col col-md-4 col-12">
+            <div class="product-box fade-in-big">
+              <img
+                src="https://images.pexels.com/photos/12446372/pexels-photo-12446372.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="product-1"
+                class="product-image"
+              />
+              <div class="product-desc text-center">
+                <h4 class="product-name">Play Hard T-Shirt</h4>
+                <p class="product-price">Rp 99K</p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-md-4 col-12">
+            <div class="product-box fade-in-big">
+              <img
+                src="https://images.pexels.com/photos/1566412/pexels-photo-1566412.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="product-1"
+                class="product-image"
+              />
+              <div class="product-desc text-center">
+                <h4 class="product-name">Work Hard T-Shirt</h4>
+                <p class="product-price">Rp 99K</p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-md-4 col-12">
+            <div class="product-box fade-in-big">
+              <img
+                src="https://images.pexels.com/photos/8612656/pexels-photo-8612656.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt="product-1"
+                class="product-image"
+              />
+              <div class="product-desc text-center">
+                <h4 class="product-name">Blue Pink T-Shirt</h4>
+                <p class="product-price">Rp 109K</p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-md-4 col-12">
+            <div class="product-box fade-in-big">
+              <img
+                src="https://images.pexels.com/photos/4316437/pexels-photo-4316437.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="product-1"
+                class="product-image"
+              />
+              <div class="product-desc text-center">
+                <h4 class="product-name">Dot Yellow</h4>
+                <p class="product-price">Rp 119K</p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-md-4 col-12">
+            <div class="product-box fade-in-big">
+              <img
+                src="https://images.pexels.com/photos/2473741/pexels-photo-2473741.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="product-1"
+                class="product-image"
+              />
+              <div class="product-desc text-center">
+                <h4 class="product-name">Black & Red</h4>
+                <p class="product-price">Rp 79K</p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-md-4 col-12">
+            <div class="product-box fade-in-big">
+              <img
+                src="https://images.pexels.com/photos/1854862/pexels-photo-1854862.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="product-1"
+                class="product-image"
+              />
+              <div class="product-desc text-center">
+                <h4 class="product-name">Authentic Yellow</h4>
+                <p class="product-price">Rp 79K</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
     <section id="features">
-      <h2 class="features-title">Features</h2>
-      <p class="features-subtitle">Why you should choose us?</p>
-      <div class="features-main">
-        <div class="feature one">
-          <i class="fa-solid fa-fire-flame-curved"></i>
-          <div class="feature-desc">
-            <h4>Premium Quality</h4>
-            <p>
-              We use the best materials for the comfort of our store's customers
+      <div class="container my-5 py-5 px-4">
+        <div class="row row-cols-2 flex-column flex-md-row">
+          <div class="col col-12 col-md-6 features-text-container">
+            <div class="features-text-box fade-in-left">
+              <h1 class="fw-bold section-heading">
+                Why <span class="heading-span">Luxury Tailored?</span>
+              </h1>
+              <p class="lh-lg">
+                Choose a brand that values quality, sustainability, and customer
+                trust above all else.
+              </p>
+            </div>
+          </div>
+          <div class="col col-12 col-md-6 mt-3 mt-md-0">
+            <div class="d-flex flex-column gap-2">
+              <div class="feature fade-in-right">
+                <i class="fa-solid fa-fire-flame-curved"></i>
+                <div class="feature-desc">
+                  <h4 class="my-2 text-white">Premium Quality</h4>
+                  <p class="text-white">
+                    We use the best materials for the comfort of our store's
+                    customers
+                  </p>
+                </div>
+              </div>
+              <div class="feature fade-in-right">
+                <i class="fa-solid fa-reply"></i>
+                <div class="feature-desc">
+                  <h4 class="my-2 text-white">Fast Response</h4>
+                  <p class="text-white">
+                    We try to respond to customer questions quickly
+                  </p>
+                </div>
+              </div>
+              <div class="feature fade-in-right">
+                <i class="fa-solid fa-face-smile-wink"></i>
+                <div class="feature-desc">
+                  <h4 class="my-2 text-white">Trendy Design</h4>
+                  <p class="text-white">
+                    We design clothes by following the trends of the times
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscribe -->
+    <section id="subscribe">
+      <div class="container my-5 px-4">
+        <div class="subscribe-box py-5 px-4">
+          <h1 class="text-white text-center section-heading fw-bold">
+            Keep yourself updated!
+          </h1>
+          <p class="lh-lg text-white text-center">
+            We will send our latest product info to your email.
+          </p>
+          <form
+            action="https://www.freecodecamp.com/email-submit"
+            id="form"
+            class="mt-5"
+          >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="e.g. email@example.com"
+            />
+            <input
+              type="submit"
+              value="Subscribe Now!"
+              id="submit"
+              class="btn-primary mt-5"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row py-5 px-4 g-3 justify-content-between row-gap-4">
+          <div class="col col-md-4 col-12">
+            <a
+              class="text-decoration-none d-flex align-items-center gap-2"
+              href="."
+            >
+              <img
+                src="assets/icon/logo_light.png"
+                alt="Logo"
+                width="45"
+                height="45"
+                class="d-inline-block align-text-top"
+              />
+              <span class="fw-bold text-white footer-company-name"
+                >Luxury Tailored</span
+              >
+            </a>
+          </div>
+          <div class="col col-md-4 col-12 d-flex flex-column text-white gap-2">
+            <h4 class="fw-bold text-start section-heading">Contact Us</h4>
+            <p class="d-flex gap-2 align-items-center footer-contact m-0">
+              <i class="fa-solid fa-envelope"></i>
+              <a class="text-decoration-none" href="direct-link-to-email"
+                >admin@mail.luxurytailored.com
+              </a>
+            </p>
+            <p class="d-flex gap-2 align-items-center footer-contact m-0">
+              <i class="fa-solid fa-phone"></i>
+              <a class="text-decoration-none" href="direct-link-to-phone">
+                (021) - 1234 - 5678
+              </a>
+            </p>
+            <p class="d-flex gap-2 align-items-center footer-contact m-0">
+              <i class="fa-solid fa-location-dot"></i>
+              <a class="text-decoration-none" href="direct-link-to-map">
+                Jakarta Raya, Indonesia
+              </a>
             </p>
           </div>
         </div>
-        <div class="feature two">
-          <i class="fa-solid fa-reply"></i>
-          <div class="feature-desc">
-            <h4>Fast Response</h4>
-            <p>We try to respond to customer questions quickly</p>
-          </div>
-        </div>
-        <div class="feature three">
-          <i class="fa-solid fa-face-smile-wink"></i>
-          <div class="feature-desc">
-            <h4>Trendy Design</h4>
-            <p>We design clothes by following the trends of the times</p>
-          </div>
+
+        <div class="copyright text-white">
+          <p class="text-center text-white m-0 py-3 opacity-50">
+            Copyright &copy; by
+            <a
+              class="text-decoration-none footer-author"
+              href="https://josephines1.github.io/"
+              target="_blank"
+            >
+              Josephine
+            </a>
+            2024. All rights reserved.
+          </p>
         </div>
       </div>
-    </section>
-    <section id="subscribe">
-      <h2 class="subscribe-title">Keep yourself updated!</h2>
-      <p class="subscribe-subtitle">
-        We will send our latest product info to your email.
-      </p>
-      <form action="https://www.freecodecamp.com/email-submit" id="form">
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="e.g. email@example.com"
-        />
-        <input type="submit" value="Subscribe Now!" id="submit" />
-      </form>
-    </section>
-    <footer id="footer">
-      <div class="footer-links">
-        <ul>
-          <li><a href="#main" class="nav-link">Home</a></li>
-          <li><a href="#products" class="nav-link">Products</a></li>
-          <li><a href="#features" class="nav-link">Features</a></li>
-          <li>
-            <a href="#subscribe" class="nav-link action-link">Subscribe</a>
-          </li>
-        </ul>
-      </div>
-      <p>&copy; 2023</p>
     </footer>
+
+    <!-- Boostrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- My JS -->
+    <script src="./dist/js/script.js"></script>
   </body>
 </html>
