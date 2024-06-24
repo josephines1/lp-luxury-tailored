@@ -80,6 +80,7 @@
 /* About */
 .about-video {
   min-height: 400px;
+  border-radius: 0.5em;
 }
 
 /* Collection */
